@@ -137,16 +137,16 @@ class Operate:
             ############### add your codes below ###############
             # drive forward
             if event.type == pygame.KEYDOWN and event.key == pygame.K_UP:
-                self.command['motion'] = [1,0]
+                self.command['motion'] = [2,0.35]
             # drive backward
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_DOWN:
-                self.command['motion'] = [-1,0]
+                self.command['motion'] = [-2,0]
             # turn left
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_LEFT:
-                self.command['motion'] = [1,1]
+                self.command['motion'] = [0,2.5]
             # drive right
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_RIGHT:
-                self.command['motion'] = [1,-1]
+                self.command['motion'] = [0,-2]
             ####################################################
             # stop
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
@@ -215,7 +215,3 @@ if __name__ == "__main__":
         # visualise
         operate.draw(canvas)
         pygame.display.update()
-
-
-
-
