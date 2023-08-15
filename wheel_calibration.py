@@ -1,4 +1,4 @@
-# for computing the wheel calibration parameters
+ # for computing the wheel calibration parameters
 import numpy as np
 import os
 import sys
@@ -15,7 +15,7 @@ def calibrateWheelRadius():
     ##########################################
     # Feel free to change the range / step
     ##########################################
-    wheel_velocities_range = range(10, 25, 5)  # or use np.linspace
+    wheel_velocities_range = range(20, 20, 20)  # or use np.linspace
     delta_times = []
 
     for wheel_vel in wheel_velocities_range:
@@ -60,7 +60,7 @@ def calibrateBaseline(scale):
     ##########################################
     # Feel free to change the range / step
     ##########################################
-    wheel_velocities_range = range(10, 25, 5)  # or use np.linspace
+    wheel_velocities_range = range(20, 20, 20)  # or use np.linspace
     delta_times = []
 
     for wheel_vel in wheel_velocities_range:
